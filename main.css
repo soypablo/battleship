@@ -1,50 +1,30 @@
-.hit {
-    background: url("ship.png") no-repeat center center;
+body{
+    background:black;
 }
-
-.miss {
-    background: url('miss.png') no-repeat center center;
-}
-
-body {
-    background-color: black;
-}
-
 div#board {
+    position:relative;
+    background: url("./board.jpg") no-repeat;
     width:      1024px;
-    height:     863px;
-    margin:     auto;
-    background: url("board.jpg") no-repeat;
-    position:   relative;
+    height:     870px;
+    margin:auto auto;
+}
+div#message{
+    width:1000px;
+    height:50px;
+    color:white;
+    font-size:2rem;
+    font-weight:bold;
+
 }
 
-div#messageArea {
-    position: absolute;
-    top:      0;
-    left:     0;
-    color:   white;
+form{
+    position:absolute;
+    right:0;
+    bottom:0;
+    padding:10px;
+    background-color:gray;
 }
-
-table {
-    position: absolute;
-    left:     173px;
-    top:      98px;
-}
-
-td {
-    width:  93px;
-    height: 93px;
-}
-
-form {
-    position:         absolute;
-    bottom:           0;
-    right:            0;
-    padding:          10px;
-    background-color: rgb(83, 175, 19);
-}
-
-form input {
-    border-color: rgb(83, 175, 19);
-    font-size:    1em;
+#fireButton{
+    font-size:1rem;
+    font-weight:bold;
 }
